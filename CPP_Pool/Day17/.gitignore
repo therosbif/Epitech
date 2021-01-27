@@ -1,0 +1,13 @@
+.vscode
+vgcore*
+*.o
+a.out
+program
+
+ex00/main.cpp
+ex01/main.cpp
+ex02/IEncryptionMethod.hpp
+ex02/main.cpp
+ex03/IEncryptionMethod.hpp
+ex03/main.cpp
+ex04/main.cpp

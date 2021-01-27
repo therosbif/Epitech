@@ -1,0 +1,11 @@
+generic_list.h
+program
+vgcore*
+Makefile
+stack.h
+main.c
+queue.h
+map.h
+double_list.h
+.vscode
+tree_traversal.h

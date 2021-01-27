@@ -1,0 +1,10 @@
+*.txt
+ex00/main.cpp
+a.out
+ex03/main.cpp
+ex04/main.cpp
+ex05/main.cpp
+ex06/main.cpp
+vgcore*
+.vscode
+ex01/main.cpp

@@ -1,0 +1,7 @@
+.vscode
+vgcore*
+*.o
+main.cpp
+a.out
+Makefile
+program

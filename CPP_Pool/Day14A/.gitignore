@@ -1,0 +1,17 @@
+.vscode
+vgcore*
+*.o
+a.out
+program
+
+ex01/BaseComponent.hpp
+ex01/RoverUnitTests.cpp
+ex03/BaseComponent.hpp
+ex03/main.cpp
+ex03/AtmosphereRegulator.*
+ex03/WaterReclaimer.*
+ex03/Error*
+ex04/BaseComponent.hpp
+ex04/main.cpp
+ex04/Oxygen*
+ex04/Error*

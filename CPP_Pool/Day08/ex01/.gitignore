@@ -1,0 +1,6 @@
+main.cpp
+Makefile
+program
+*.o
+vgcore*
+.vscode

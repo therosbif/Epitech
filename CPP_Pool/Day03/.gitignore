@@ -1,0 +1,5 @@
+*.o
+main.c
+.vscode
+a.out
+libstring.a

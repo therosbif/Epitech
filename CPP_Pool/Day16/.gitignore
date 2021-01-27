@@ -1,0 +1,14 @@
+.vscode
+vgcore*
+*.o
+a.out
+program
+
+ex00/main.cpp
+ex00/KoalaAction.hpp
+ex01/main.cpp
+ex02/test.c
+ex02/main.cpp
+ex02/test.bf
+ex02/trans
+ex03/main.cpp

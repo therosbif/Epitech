@@ -1,0 +1,9 @@
+.vscode
+ex02/I*
+ex02/main.cpp
+ex03/ICharacter.hpp
+ex03/IMateriaSource.hpp
+ex03/main.cpp
+ex04/IMiningLaser.hpp
+ex04/main.cpp
+a.out
