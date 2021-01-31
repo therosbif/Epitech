@@ -7,6 +7,14 @@
 
 #include "my_ls.h"
 
+int my_ac(int i)
+{
+    static int ac;
+
+    if (i != 0) ac = i;
+    return ac;
+}
+
 DIR *my_open(char *path)
 {
     DIR *dirp = opendir(path);
@@ -19,7 +27,7 @@ DIR *my_open(char *path)
             write(1, "\n", 1);
             return NULL;
         } else {
-            write(2, "ERROR: Invalid path\n", 22);
+            write(2, "ERROR: Invalid path\n", 21);
             exit(84);
         }
     }
@@ -53,7 +61,7 @@ int main(int ac, char **av)
 {
     int path_flag = 0;
 
-    my_ac = ac;
+    my_ac(ac);
     for (int i = 1; i < ac; i++){
         if (av[i][0] != '-'){
             my_ls(av, av[i]);

@@ -29,8 +29,6 @@ typedef struct flags {
     int total;
 } flags_t;
 
-int my_ac;
-
 int my_ls(char **av, char *path);
 flags_t *set_flags(char **av);
 flags_t *init_flags(void);
@@ -48,5 +46,6 @@ int my_show_word_array(char * const *tab, flags_t *flags, char **av,
 char *path);
 char *my_low(char *str);
 void l_prefix(char *file, char *path);
+int my_ac(int i);
 
 #endif

@@ -39,7 +39,7 @@ char *get_map(int ac, char **av)
 
     (ac < 2) ? exit(84) : 1;
     if (!my_strcmp(av[1], "-h")) {
-        write(1, "USAGE\n    ./my_sokoban map\n", 29);
+        write(1, "USAGE\n    ./my_sokoban map\n", 28);
         write(1, "DESCRIPTION\n", 13);
         write(1, "    map  file representing the warehouse map, ", 47);
         write(1, "containing ‘#’ for walls, \n", 31);

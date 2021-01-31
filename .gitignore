@@ -1,0 +1,4 @@
+*.o
+vgcore*
+.vscode*
+

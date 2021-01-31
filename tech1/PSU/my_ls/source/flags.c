@@ -5,7 +5,7 @@
 ** .
 */
 
-#include <my_ls.h>
+#include "my_ls.h"
 
 flags_t *init_flags(void)
 {
@@ -26,7 +26,7 @@ flags_t *set_flags(char **av)
     flags_t *flags = init_flags();
     int valid = 0;
 
-    for (int i = 1; i < my_ac; i++) {
+    for (int i = 1; i < my_ac(0); i++) {
         for (int j = 1; av[i][0] == '-' && av[i][j]; j++, valid = 0) {
             (av[i][j] == 'l') ? flags->l = 1, (valid = 1) : 1;
             (av[i][j] == 'd') ? flags->d = 1, (valid = 1) : 1;
