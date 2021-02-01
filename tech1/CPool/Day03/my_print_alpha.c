@@ -7,11 +7,11 @@
 
 int my_print_alpha(void)
 {
-    int i = 97;
+    char c = 'a';
 
-    while (i<123) {
-        my_putchar(i);
-        i++;
+    while (c <= 'z') {
+        my_putchar(c);
+        c++;
     }
     return (0);
 }

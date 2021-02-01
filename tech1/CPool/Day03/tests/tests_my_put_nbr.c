@@ -14,4 +14,3 @@ int main(void)
     my_put_nbr(2147483647);
     return (0);
 }
-    

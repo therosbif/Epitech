@@ -7,9 +7,9 @@
 
 #include <count_words.h>
 
-int my_addtolist(words_t **words, char *word)
+int my_addtolist(words_t *words, char *word)
 {
-    words_t *tmp = *words;
+    words_t *tmp = words;
 
     while (tmp->next) {
         if (!my_strcmp(word, tmp->word)) {
@@ -43,7 +43,6 @@ int main(int ac, char **av)
     char *word;
     int end = 0;
 
-    printf("%d\n", ac);
     words->word = 0;
     words->next = NULL;
     if (ac != 2)
@@ -60,4 +59,3 @@ int main(int ac, char **av)
     my_display(words);
     return 0;
 }
-

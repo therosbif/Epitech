@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2019
 ** print comb
 ** File description:
-** combination of 3 different numbers 
+** combination of 3 different numbers
 */
 
 void print_num(char a, char b, char c)
@@ -20,7 +20,7 @@ void testvalid(char a, char b, char c)
         print_num(a, b, c);
     }
 }
-    
+
 int my_print_comb(void)
 {
     char a = 48;

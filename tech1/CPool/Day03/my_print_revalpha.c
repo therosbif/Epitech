@@ -7,9 +7,9 @@
 
 int my_print_revalpha(void)
 {
-    int i = 122;
+    int i = 'z';
 
-    while (i>96) {
+    while (i >= 'a') {
         my_putchar(i);
         i--;
     }
