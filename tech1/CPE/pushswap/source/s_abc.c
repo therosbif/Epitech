@@ -12,11 +12,11 @@ void sa(list_t **l_a, list_t **l_b, char *str)
     list_t *tmp = (*l_a)->next;
 
     if ((*l_a)->next){
-        PRINT_BUFF;
+        print_buff(str);
         (*l_a)->next = tmp->next;
         tmp->next = *l_a;
         *l_a = tmp;
-        PRINT_STEP;
+        (!flag(GET)) ? print_step(*l_a, *l_b) : 1;
     }
 }
 

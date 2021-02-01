@@ -22,6 +22,11 @@ int my_put_nbr(int nb);
 int my_putstr(char const *str);
 int my_strcmp(char const *s1, char const *s2);
 
+int offset(int i);
+int flag(int i);
+char *buff(char action, int idx, char c);
+
+void print_buff(char *str);
 void print_step(list_t *l_a, list_t *l_b);
 void free_list(list_t *l_a);
 
@@ -40,23 +45,7 @@ void rra(list_t **l_a, list_t **l_b);
 void rrb(list_t **l_a, list_t **l_b);
 void rrr(list_t **l_a, list_t **l_b);
 
-int offset;
-int flag;
-char buff[1000000];
-
-#define PRINT_STEP  (!flag) ? print_step(*l_a, *l_b) : 1
-
-#define PRINT_BUFF                                                            \
-if ((buff[offset - 3] == 'p' && *str == 'p' && buff[offset - 2] != str[1]) || \
-(buff[offset - 3] == 's' && *str == 's' && buff[offset - 2] == str[1]))       \
-    offset -= 3;                                                              \
-else { \
-    if (offset + 3 >= 1000000) { \
-        write(1, buff, offset); \
-        offset = 0; \
-    } \
-    for (; *str; buff[offset] = *str, offset++, str++); \
-}
+#define GET -1
+#define SET 0
 
 #endif /* !PUSHSWAP_H_ */
-

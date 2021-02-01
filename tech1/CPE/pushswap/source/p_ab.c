@@ -12,11 +12,11 @@ void pa(list_t **l_a, list_t **l_b, char *str)
     list_t *tmp = *l_b;
 
     if (*l_b) {
-        PRINT_BUFF;
+        print_buff(str);
         *l_b = (*l_b)->next;
         tmp->next = *l_a;
         *l_a = tmp;
-        PRINT_STEP;
+        (!flag(GET)) ? print_step(*l_a, *l_b) : 1;
     }
 }
 

@@ -12,8 +12,10 @@ CC	= gcc
 RM	= rm -f
 
 SRCS	= ./lib/my/my_atoi.c \
-	  ./lib/my/p_ab.c \
-	  ./lib/my/s_abc.c \
+	  ./source/p_ab.c \
+	  ./source/s_abc.c \
+	  ./source/global.c \
+	  ./source/display.c \
 	  ./source/main.c \
 	  ./lib/my/my_putstr.c \
 	  ./lib/my/my_put_nbr.c \
@@ -22,8 +24,8 @@ SRCS	= ./lib/my/my_atoi.c \
 OBJS	= $(SRCS:.c=.o)
 
 CFLAGS = -I ./include/
-CFLAGS += -Ofast
-#CFLAGS += -Wall -Wextra -g3
+#CFLAGS += -Ofast
+CFLAGS += -Wall -Wextra -g3
 
 all: $(NAME)
 
