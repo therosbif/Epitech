@@ -11,13 +11,11 @@ int my_getnbr(char const *str)
     long nb = 0;
     int i = 0;
 
-    for (i ; str[i] == '-' || str[i] == '+' ; i++) {
-        if (str[i] == '-')
-            negs++;
-    }
-    for (int j = i ; str[j] >= '0' && str[j] <= '9' ; j++)
-        nb = (nb * 10 + (str[j] - 48));
-    if (negs % 2 == 1)
+    for (i ; str[i] == '-' || str[i] == '+' ; i++)
+        negs += (str[i] == '-');
+    for (; str[i] >= '0' && str[i] <= '9' ; i++)
+        nb = (nb * 10 + (str[i] - '0'));
+    if (negs % 2)
         nb *= -1;
     if (nb >= 2147483647 || nb <= -2147483648)
         return (0);
