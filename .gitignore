@@ -1,4 +1,6 @@
 *.o
 vgcore*
 .vscode*
+a.out
+program
 

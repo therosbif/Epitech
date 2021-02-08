@@ -1,0 +1,9 @@
+.vscode
+vgcore*
+*.o
+a.out
+program
+*.hi
+pushswap_checker
+pushswap
+test
