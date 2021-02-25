@@ -1,0 +1,6 @@
+.vscode
+vgcore*
+*.o
+a.out
+program
+my_ls
